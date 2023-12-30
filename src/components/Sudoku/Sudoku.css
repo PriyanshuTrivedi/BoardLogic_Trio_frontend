@@ -1,0 +1,410 @@
+.Sudoku{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.sudokuPage{
+    padding-top:10vh;
+    height: 90vh;
+    width: 100vw;
+    background-image: url('../../images/img3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#btn1,#timeBox{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    height: 30px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: absolute;
+}
+#quitBox:hover{
+    cursor: pointer;
+}
+#btn{
+    z-index: 1;
+}
+#timeBox{
+    z-index: -1;
+}
+.generateSudokuBtnAndTimeBox{
+    height: 40px;
+    width: 160px;
+}
+.quitAndBackBox{
+    height: 40px;
+    width: 60px;
+}
+#btn1:hover{
+    cursor: pointer;
+}
+.sudoku1X1cell,.sudoku1X3row,.sudoku3X9row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sudoku3X3board,.sudoku1X1cell{
+    border: 1px solid black;
+    border-radius: 10px;;
+}
+.sudoku1X1cell{
+    height: 45px;
+    width: 45px;
+    backdrop-filter: blur(6px);
+}
+.setdifficulty,.diffBoxAndTimeAndGenBoxAndQuitBox,#DiffBox,#quitBox,#backBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.diffBoxAndTimeAndGenBoxAndQuitBox{
+    height: 60px;
+    width: 40vw;
+    border: 1px solid black;
+    border-radius: 20px;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    backdrop-filter: blur(6px);
+}
+.setdifficulty{
+    width: 320px;
+    justify-content: space-between;
+}
+#DiffBox,#quitBox,#backBox{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 30px;
+    width: 75px;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    font-size: 14px;
+}
+#quitBox,#backBox{
+    position: absolute;
+    width: 60px;
+    height: 40px;
+}
+#quitBox:hover,#backBox:hover{
+    cursor: pointer;
+}
+#quitBox{
+    z-index: -1;
+}
+#backBox{
+    z-index: 1;
+}
+.timeAndGenBoxAndQuitBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 230px
+}
+.freqNumBox{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: white;
+    background-color: black;
+    font-weight: bolder;
+    border-radius: 5px;
+    position: relative;
+    height: 43px;
+    width: 43px;
+}
+.freqNumBox:hover{
+    cursor: pointer;
+}
+.numWhoseFreqisGiven{
+    height: 43px;
+    width: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 18px;
+}
+.numFreq{
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    font-size: 12px;
+}
+.emptyVertLine{
+    height: 38px;
+    width: 10px;
+}
+.sudokuInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 550px;
+    width: 500px;
+    margin: auto;
+}
+.msgBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 15rem;
+    width: 25rem;
+    padding: 1rem 3rem;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 2rem;
+    margin-top: 7rem;
+    backdrop-filter: blur(10px);
+}
+.leftBoxesNumberFreq{
+    display: flex;
+    width: 500px;
+    height: 50px;
+    justify-content: space-between;
+}
+.sudokuBoardSkeleton{
+    display: flex;
+    justify-content: center;
+}
+.msg{
+    font-weight: bold;
+    height: 30%;
+    width: 100%;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+.gameStats{
+    height: 60%;
+    width: 90%;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.gameStatsFields{
+    height: 23%;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fieldName{
+    font-weight: bold;
+}
+
+/* for mobile view  */
+/* ****************************************************************************************************************************** */
+
+@media (max-width: 600px){
+    .sudokuPage{
+        padding-top:10vh;
+        height: 90vh;
+        width: 100vw;
+        background-image: url('../../images/img3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #btn1,#timeBox{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+        padding: 5px;
+        color: white;
+        background-color: black;
+        height: 30px;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        position: absolute;
+    }
+    #quitBox:hover{
+        cursor: pointer;
+    }
+    #btn{
+        z-index: 1;
+    }
+    #timeBox{
+        z-index: -1;
+    }
+    .generateSudokuBtnAndTimeBox{
+        height: 40px;
+        width: 160px;
+    }
+    .quitAndBackBox{
+        height: 40px;
+        width: 60px;
+    }
+    #btn1:hover{
+        cursor: pointer;
+    }
+    .sudoku1X1cell,.sudoku1X3row,.sudoku3X9row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .sudoku3X3board,.sudoku1X1cell{
+        border: 1px solid black;
+        border-radius: 10px;;
+    }
+    .sudoku1X1cell{
+        height: 25px;
+        width: 25px;
+        backdrop-filter: blur(6px);
+    }
+    .setdifficulty,.diffBoxAndTimeAndGenBoxAndQuitBox,#DiffBox,#quitBox,#backBox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .diffBoxAndTimeAndGenBoxAndQuitBox{
+        height: 10vh;
+        width: 90vw;
+        border: 1px solid black;
+        border-radius: 20px;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: auto;
+        backdrop-filter: blur(6px);
+    }
+    .setdifficulty{
+        width: 320px;
+        justify-content: space-between;
+    }
+    #DiffBox,#quitBox,#backBox{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        height: 20px;
+        width: 60px;
+        border: 1px solid black;
+        border-radius: 10px;
+        color: white;
+        background-color: black;
+        font-size: 12px;
+    }
+    #quitBox,#backBox{
+        position: absolute;
+        width: 60px;
+        height: 40px;
+    }
+    #quitBox:hover,#backBox:hover{
+        cursor: pointer;
+    }
+    #quitBox{
+        z-index: -1;
+    }
+    #backBox{
+        z-index: 1;
+    }
+    .timeAndGenBoxAndQuitBox{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        width: 230px
+    }
+    .freqNumBox{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        color: white;
+        background-color: black;
+        font-weight: bolder;
+        border-radius: 5px;
+        position: relative;
+        height: 25px;
+        width: 25px;
+    }
+    .freqNumBox:hover{
+        cursor: pointer;
+    }
+    .numWhoseFreqisGiven{
+        height: 25px;
+        width: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+    .numFreq{
+        position: absolute;
+        top: 1px;
+        right: 3px;
+        font-size: 8px;
+    }
+    .sudokuInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 70vh;
+        width: 90vw;
+        margin: auto;
+    }
+    .msgBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 30%;
+        width: 70%;
+        padding: .5rem 1.5rem;
+        margin: auto;
+        border: 1px solid black;
+        border-radius: 2rem;
+        margin-top: 7rem;
+        backdrop-filter: blur(10px);
+    }
+    .leftBoxesNumberFreq{
+        display: flex;
+        width: 90vw;
+        justify-content: space-between;
+    }
+    .sudokuBoardSkeleton{
+        display: flex;
+        justify-content: center;
+    }
+    .msg{
+        font-size: 11px;
+        font-weight: bold;
+        height: 30%;
+        width: 100%;
+        /* border: 1px solid black; */
+        text-align: center;
+    }
+    .gameStats{
+        font-size: 10px;
+        height: 60%;
+        width: 90%;
+        /* border: 1px solid black; */
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .gameStatsFields{
+        height: 23%;
+        width: 100%;
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .fieldName{
+        font-weight: bold;
+    }
+}

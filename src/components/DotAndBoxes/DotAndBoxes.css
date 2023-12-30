@@ -1,0 +1,192 @@
+/* .DotAndBoxes{
+    background-image: url('../../images/img4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.DotAndBoxesMenuMainArea{
+    height: 85%;
+    width: 80%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.DotAndBoxesInpts{
+    margin-top: 20rem;
+    border: 1px solid black;
+    border-radius: 3rem;
+    height: 10rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    backdrop-filter: blur(23px);
+    font-weight: bold;
+}
+.inptBox{
+    width: 17rem;
+    display: flex;
+    justify-content: space-between;
+}
+.inptField{
+    width: 8rem;
+}
+.rules{
+    height: 37rem;
+    width: 30rem;
+    border: 1px solid black;
+    background-image: url('../../images/paperRBG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.rulesTxt{
+    padding-top: 2rem;
+    padding-left: 4rem;
+    padding-right: 3rem;
+    border: 1px solid black;
+}
+.rulesTxt h1{
+    text-align: center;
+}
+.rulesTxt ul li{
+    margin-bottom: 1rem;
+} */
+
+.DotAndBoxesContainer{
+    background-image: url('../../images/img3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+.DotAndBoxes{
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mainGridContainer{
+    height: 90%;
+    width: 60%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.makeFlex{
+    display: flex;
+}
+.dot{
+    height: 23px;
+    width: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60%;
+    color: aliceblue;
+    border-radius: 50%;
+    background-color: rgb(44, 41, 41)
+}
+.box{
+    height: 43px;
+    width: 43px;
+    border-radius: 20%;
+    background-color: rgb(94, 81, 92)
+}
+.horiLineContainer{
+    height: 23px;
+    width: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.horiLine{
+    height: 6px;
+    width: 38px;
+    border-radius: 20px;
+    background-color: aqua;
+}
+.vertLineContainer{
+    height: 43px;
+    width: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vertLine{
+    height: 38px;
+    width: 6px;
+    border-radius: 20px;
+    background-color: aqua;
+}
+
+@media (max-width: 600px){
+    .DotAndBoxes{
+        height: 100vh;
+        width: 100vw;
+        margin: auto;
+        display: block;
+    }
+    .mainGridContainer{
+        height: 70%;
+        width: 100%;
+        border: 0px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .makeFlex{
+        display: flex;
+    }
+    .dot{
+        height: 11px;
+        width: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40%;
+        color: aliceblue;
+        border-radius: 50%;
+        background-color: rgb(44, 41, 41)
+    }
+    .box{
+        height: 23px;
+        width: 23px;
+        border-radius: 20%;
+        background-color: rgb(94, 81, 92)
+    }
+    .horiLineContainer{
+        height: 11px;
+        width: 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .horiLine{
+        height: 4px;
+        width: 20px;
+        border-radius: 20px;
+        background-color: aqua;
+    }
+    .vertLineContainer{
+        height: 23px;
+        width: 11px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .vertLine{
+        height: 20px;
+        width: 4px;
+        border-radius: 20px;
+        background-color: aqua;
+    }
+}

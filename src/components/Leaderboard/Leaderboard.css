@@ -1,0 +1,96 @@
+.LeaderboardContainer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('../../images/img3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Leaderboard{
+    height: 80vh;
+    width: max(50vw,18rem);
+    border: 2px solid black;
+    border-radius: 2rem;
+    padding: 1rem 0;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.inpFieldsLeaderBoardContainer{
+    width: 95%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inpFieldsLeaderBoard{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* border: 1px solid black; */
+    width: min(18rem,49%);
+    font-size: min(4vw,16px);
+    font-weight: bold;
+}
+.inpFieldsSelectLeaderBoard{
+    margin-left: 1rem;
+    border-radius: 10px;
+}
+.leaderBoardArea{
+    height: 80%;
+    width: 95%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: scroll;
+}
+.leaderBoardArea::-webkit-scrollbar{
+    display: none;
+}
+.leaderBoardEntries{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    width: 98%;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    font-size: min(16px,3.3vw)
+}
+.leaderBoardEntriesInfo{
+    width: 25%;
+    text-align: center;
+}
+.leaderBoardEntriesRank{
+    width: 10%;
+    text-align: center;
+}
+.leaderBoardHeadings{
+    height: 4vh;
+    width: 90%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: min(3.3vw,16px);
+    font-weight: bold;
+}
+@media (max-width: 600px){
+    .inpFieldsLeaderBoard{
+        flex-direction: column;
+        height: 2.5rem;
+        justify-content: space-evenly;
+    }
+    .inpFieldsSelectLeaderBoard{
+        margin: 0;
+    }
+}

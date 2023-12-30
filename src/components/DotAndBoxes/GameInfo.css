@@ -1,0 +1,125 @@
+.gameInfo{
+    margin: auto;
+    height: 90%;
+    width: 35%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.dotAndBoxesScore{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 15vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.gameInfo_color{
+    height: 3.5vh;
+    width: 3.5vh;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.userColor{
+    background-color: red;
+}
+.compColor{
+    background-color: green;
+}
+.scoreContainer{
+    display: flex;
+    width: 80%;
+    height: 45%;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    align-items: center;
+}
+.moveDetailsContainer{
+    backdrop-filter: blur(10px);
+    width: 80%;
+    height: 50vh;
+    border-radius: 2rem;
+    border: 2px solid black;
+}
+.moveDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    height: 75%;
+    width: 100%;
+}
+.moveDetailsContainer h3{
+    text-align: center;
+}
+.moveDetails::-webkit-scrollbar{
+    display: none;
+}
+.gameInfo_moveHistoryBox{
+    padding: 1rem .7rem;
+    width: 85%;
+    /* border: 1px solid black; */
+    border-radius: 2rem;
+    margin-top: 1rem;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.sandBoxImg{
+    height: 90%;
+}
+.sandBoxImg img{
+    height: 100%;
+}
+.gameInfo_name{
+    font-weight: 700;
+}
+
+@media (max-width: 600px){
+    .gameInfo{
+        margin: 0;
+        height: 35%;
+        width: 100%;
+        border: 0px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+    }
+    .moveDetailsContainer{
+        backdrop-filter: blur(10px);
+        width: 45%;
+        height: 90%;
+        border-radius: 2rem;
+        border: 2px solid black;
+    }
+    .dotAndBoxesScore{
+        width: 50%;
+    }
+    .scoreContainer{
+        width: 90%;
+    }
+    .gameInfo_name{
+        font-size: 12px;
+    }
+    .moveDetailsContainer h3{
+        text-align: center;
+        font-size: 16px;
+        margin: .5rem 0;
+    }
+    .gameInfo_moveHistoryBox{
+        padding: .5rem 0rem .5rem .5rem;
+        width: 85%;
+        /* border: 1px solid black; */
+        border-radius: 1rem;
+        margin-top: .5rem;
+        font-size: 10px;
+        font-weight: 400;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+}
